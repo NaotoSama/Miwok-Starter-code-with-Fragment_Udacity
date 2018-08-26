@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 創建一個ripple標籤然後定義之-->
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:color="#FFFF00"
+    tools:targetApi="21">
+
+    <!-- Borderless ripple effect does not require a mask, as opposed to bordered ripple effect.
+    Ripple效果只支援Api 21 以上的環境，所以只好設定targetApi來限定此屬性只套用到21的環境。使用 tools:targetApi 属性可以忽视版本的警告-->
+
+</ripple>

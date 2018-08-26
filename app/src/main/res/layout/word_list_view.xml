@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--Best Method using a ListView in xml to couple with the Array Adapter in Activity.java
+    for view recycling and reduced memory usage-->
+
+<ListView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/word_list_view"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.android.miwok.NumbersActivity"
+    android:drawSelectorOnTop="true"/>
+    <!--Setting "drawSelectorOnTop" on the ListView will make the pressed state shown on each list item.
+        Now, list items show a pressed state when clicked on. -->
+
+
+
+<!--  Less ideal way using a LinearLayout
+
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".NumbersActivity"
+    android:id="@+id/rootView">
+
+</LinearLayout>
+-->

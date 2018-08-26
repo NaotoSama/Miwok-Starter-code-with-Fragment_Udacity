@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--xmlns:tools="http://schemas.android.com/tools" means
+any code line below that starts with the prefix "tools" is part of the tools namespace
+tools可以告訴Android Studio，哪些屬性在運行的時候是被忽略的，只在設計佈局的時候有效。
+比如我們要讓android:text屬性只在佈局預覽中有效。
+tools可以覆蓋android的所有標準屬性，將android:換成tools:即可。
+同時在運行的時候就連tools:本身都是被忽略的，不會被帶進apk中。-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="88dp"
+        android:layout_height="88dp"
+        android:src="@mipmap/ic_launcher"
+        android:background="#FFF7DA" />
+
+
+    <LinearLayout
+        android:id="@+id/text_container"
+        android:layout_width="match_parent"
+        android:layout_toRightOf="@id/image"
+        android:layout_height="88dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingLeft="16dp"
+        tools:background="#e0e9e1">
+        <!-- 先用tools把背景暫時設成預覽色，實際運行時會顯示別的設定色-->
+
+
+        <TextView
+            android:id="@+id/miwok_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="lutti"
+            tools:textColor="#000000"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="18sp" />
+        <!-- 先用tools把背景和文字暫時設成預覽色，實際運行時會顯示別的android設定色-->
+
+
+        <TextView
+            android:id="@+id/default_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="one"
+            tools:textColor="#000000"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+        <!-- 先用tools把背景和文字暫時設成預覽色，實際運行時會顯示別的android設定色-->
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/play_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/baseline_play_arrow_black_24" />
+
+
+</RelativeLayout>

@@ -44,6 +44,7 @@ public class Word {
      * This first constructor will be used by PhrasesActivity.java
      *  Constructor負責把模具排序
      */
+    //Call the constructor method to initialize the global member variables at the top based on the values we pass into the constructor.
     public Word(String defaultTranslation, String miwokTranslation, int audioResourceId) {
         mDefaultTranslation = defaultTranslation;
         mMiwokTranslation = miwokTranslation;
@@ -55,6 +56,7 @@ public class Word {
      *  This second constructor will be used by NumbersActivity, ColorsActivity, and FamilyActivity.java
      *   Constructor負責把模具排序
      * */
+    //Call the constructor method to initialize the global member variables at the top based on the values we pass into the constructor.
     public Word(String defaultTranslation, String miwokTranslation, int imageResourceId, int audioResourceId) {
         mDefaultTranslation = defaultTranslation;
         mMiwokTranslation = miwokTranslation;
@@ -63,6 +65,7 @@ public class Word {
     }
 
 
+    //The global member variables at the top are private, so we need to create public Getter methods for other classes to access them.
     /**
       * Call the getter method to get the default translation of the word.
      * Getter負責把各模具對應的材料抓來放進constructor

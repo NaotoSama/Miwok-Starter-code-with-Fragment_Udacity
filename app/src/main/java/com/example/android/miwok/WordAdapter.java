@@ -47,20 +47,21 @@ public class WordAdapter extends ArrayAdapter<Word> {
      * @param parent The parent ViewGroup that is used for inflation.
      * @return The View for the position in the AdapterView.
      */
+    //Create a getView method to control how the listView gets created.
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
         // Check if the existing view is being reused, otherwise inflate the view
         View listItemView = convertView;
-        if(listItemView == null) {
-            listItemView = LayoutInflater.from(getContext()).inflate(
+        if(listItemView == null) {                                                                  // When getView is called, we can check to see if we can use a recycled view.
+            listItemView = LayoutInflater.from(getContext()).inflate(                               // Otherwise, we inflate a new ListItem layout defined in the custom_earthquake_list_item.xml file.
                     R.layout.list_item, parent, false);
         }
 
         // Get the object located at this position in the list
-        Word currentWord = getItem(position);
+        Word currentWord = getItem(position);                                                       // We can use the position parameter passed in to get a reference to the appropriate Earthquake object from the list of earthquakes.
 
-        // Find the TextView in the list_item.xml layout with the ID miwok_text_view
+        // Find the TextView in the list_item.xml layout with the ID miwok_text_view                //Bind the data from the Earthquake object to the views in the custom_earthquake_list_item layout, and set the corresponding data onto them.
         TextView miwokTextView = (TextView) listItemView.findViewById(R.id.miwok_text_view);
         // Get the MiwokTranslation and set this text on the name TextView
         miwokTextView.setText(currentWord.getMiwokTranslation());
@@ -97,7 +98,7 @@ public class WordAdapter extends ArrayAdapter<Word> {
 
         // Return the whole list item layout (containing 2 TextViews and 1 ImageView)
         // so that it can be shown in the ListView
-        return listItemView;
+        return listItemView;                                                                        //Once everything is set, return the view to the caller, which is the ListView that will take all the list items and display them on the screen.
     }
 
 }

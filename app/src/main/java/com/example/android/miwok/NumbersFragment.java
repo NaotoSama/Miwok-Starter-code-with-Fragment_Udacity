@@ -18,9 +18,12 @@ import com.example.android.miwokWithFragment.R;
 
 import java.util.ArrayList;
 
+
 /**
- * {@link Fragment} that displays a list of number vocabulary words.
+ * 這個Classs目的是要設置ArrayList，並透過MediaPlayer、AudioManager、OnAudioFocusChangeListener、releaseMediaPlayer
+ * 設置音檔到ArrayList
  */
+
 public class NumbersFragment extends Fragment {
 
     /**

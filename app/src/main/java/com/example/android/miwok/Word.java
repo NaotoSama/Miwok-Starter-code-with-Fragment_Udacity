@@ -5,6 +5,11 @@ package com.example.android.miwok;
 import android.widget.ImageView;
 
 /**
+ * 這個自定義的Class目的是要定義模具和定義模具擺放的位置
+ */
+
+
+/**
 * {@link Word} represents a vocabulary word that the user wants to learn.
 * It contains a default translation, a Miwok translation, and an image  for that word.
  *此 Word Class中的variables好比一個個模具，等者被放進constructor中排序

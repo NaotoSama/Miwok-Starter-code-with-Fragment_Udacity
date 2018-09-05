@@ -19,6 +19,12 @@ import com.example.android.miwokWithFragment.R;
 import java.util.ArrayList;
 
 /**
+ * 這個Classs目的是要設置ArrayList，並透過MediaPlayer、AudioManager、OnAudioFocusChangeListener、releaseMediaPlayer
+ * 設置音檔到ArrayList
+ */
+
+
+/**
  * A simple {@link Fragment} subclass.
  */
 public class ColorsFragment extends Fragment {

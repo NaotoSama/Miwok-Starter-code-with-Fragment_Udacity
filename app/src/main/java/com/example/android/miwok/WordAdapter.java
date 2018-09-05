@@ -17,6 +17,11 @@ import com.example.android.miwokWithFragment.R;
 import java.util.ArrayList;
 import java.util.Set;
 
+/**
+ * 這個Adapter(調度器)的Class目的是要對接自定義的list_item佈局，以及對接ArrayList，並把ArrayList中擺放好的各模具設置到(對接到)相對應的View上。
+ */
+
+
 public class WordAdapter extends ArrayAdapter<Word> {
 
     /** Resource ID for the background color for this list of words

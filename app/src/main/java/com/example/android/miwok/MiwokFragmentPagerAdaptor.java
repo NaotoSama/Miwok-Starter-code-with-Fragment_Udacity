@@ -7,6 +7,10 @@ import android.support.v4.app.FragmentPagerAdapter;
 
 import com.example.android.miwokWithFragment.R;
 
+/**
+ * 這個Classs目的是要設置FragmentPagerAdaptor，並透過getItem對接各個子Fragment，透過getPageTitle抓各子fragment的標題
+ */
+
 
 /**
  * Create a new {@link MiwokFragmentPagerAdaptor} object to provides the appropriate {@link Fragment} for a view pager.
@@ -71,7 +75,7 @@ public class MiwokFragmentPagerAdaptor extends FragmentPagerAdapter {
     /**
      * Modify the default MiwokFragmentPagerAdaptor getPageTitle(int position) implementation to return the proper category name per page. We could return a hardcoded string such as “Numbers,” “Family,” and so on.
      * However, we don’t want to restrict our app to only support the English language. Instead, we should use the string resource for those category names. Unfortunately, that also means we need a Context object in order to turn the string resource ID into an actual String.
-     * So we modified the MiwokFragmentPagerAdaptor constructor at the far top  to also require a Context input so that we can get the proper text string.
+     * So we modified the MiwokFragmentPagerAdaptor constructor at the far top to also require a Context input so that we can get the proper text string.
      */
 
 

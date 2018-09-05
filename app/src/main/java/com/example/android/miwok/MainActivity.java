@@ -21,6 +21,11 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import com.example.android.miwokWithFragment.R;
 
+/**
+ * 這個Class目的是要把Adapter(調度器)設置到viewPager上，把viewPager設置到tabLayout。
+ */
+
+
 public class MainActivity extends AppCompatActivity {
 
     @Override

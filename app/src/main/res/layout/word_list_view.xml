@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- 這個佈局的目的是純粹導入ListView功能，讓EarthquakeActivity Class透過Adapter(調度器)的仲介，把畫面顯示在這個ListView上-->
 
 <!--Best Method using a ListView in xml to couple with the Array Adapter in Activity.java
     for view recycling and reduced memory usage-->
@@ -13,7 +14,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.android.miwok.NumbersActivity"
+    tools:context="com.example.android.miwok.NumbersFragment"
     android:drawSelectorOnTop="true"/>
     <!--Setting "drawSelectorOnTop" on the ListView will make the pressed state shown on each list item.
         Now, list items show a pressed state when clicked on. -->

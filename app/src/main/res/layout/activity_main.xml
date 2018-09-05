@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--這個佈局的目的是導入Support Library中的TabLayout和ViewPager功能-->
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"

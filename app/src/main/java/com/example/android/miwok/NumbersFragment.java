@@ -84,6 +84,9 @@ public class NumbersFragment extends Fragment {
 
     public NumbersFragment() {
         // Required empty public constructor
+        //為什麼在每個片段中都需要一個公共的空構造函數？
+        //片段的所有子類都必須包括一個公共的無參數的構造函數。框架通常會在需要時重新實例化一個片段類，特別是在狀態恢復期間，
+        //並且需要能夠找到這個構造器來實例化它。如果無參數構造函數不可用，則在狀態恢復期間會發生運行時異常。
     }
 
 
